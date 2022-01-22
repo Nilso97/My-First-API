@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 app.post('/login', function (req, res) {
     let username = req.body.username;
     let password = req.body.password;
-    let users = ['nilso', 'francine', 'salete'];
+    let users = ['adm01', 'adm02', 'adm03'];
 
     console.log('LOGIN');
 
