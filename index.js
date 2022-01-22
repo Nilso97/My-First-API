@@ -1,3 +1,4 @@
+// NodeJS API - LOGIN 
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -11,6 +12,8 @@ app.get('/', function (req, res) {
 app.post('/login', function (req, res) {
     let username = req.body.username;
     let password = req.body.password;
+
+// Array com os usuários liberados para fazer login...
     let users = ['adm01', 'adm02', 'adm03'];
 
     console.log('LOGIN');
